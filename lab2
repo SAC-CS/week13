@@ -1,0 +1,49 @@
+import java.util.Random;
+
+
+public class Dice {
+
+    public static void main(String[] args) {
+       
+
+
+        
+     public int dice1;
+     public int dice2;
+     public int dice3;
+
+       OneThrow();
+
+      
+    }
+    public static void OneThrow() {
+   
+
+    int dice1=(int)(Math.random()*6+1);
+    int dice2=(int)(Math.random()*6+1);
+    int dice3=(int)(Math.random()*6+1);
+    int ave= (dice1 + dice2 + dice3)/3;
+
+    System.out.println("Roll: total = " +ave); 
+
+    
+        }
+}
+
+
+public class Dice {
+private static int randomNum;
+private static int d;
+private static int b;
+ public static int OneThrow()
+{
+ randomNum = 1+(int)(Math.random()*6);
+ return randomNum;
+
+}
+ public static int OneThrow(int dice, int bounces)
+{
+ this.d = dice;
+ this.b = bounces;
+}
+}
