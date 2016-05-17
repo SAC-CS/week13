@@ -1,0 +1,45 @@
+public class HomeWork13 {
+
+	public static void main(String[] args) {
+		try{
+		TrippleDice dice1=new TrippleDice();
+		TrippleDice dice2 = (TrippleDice)dice1.clone();
+		System.out.println(dice1);
+		System.out.println(dice2);
+		
+		System.out.println(dice1.equals(dice2));
+	}
+		catch(CloneNotSupportedException c)
+		{
+			System.err.println("Error.");
+		}
+	}
+}
+
+public class TrippleDice extends Dice13{
+
+public class TrippleDice extends Dice13 implements Cloneable{
+ 	private  int randomNumber;
+ 	 	public int Throw()
+ 	{		
+ 		randomNumber=super.Throw()+super.Throw()+super.Throw();
+ 		
+return randomNumber;
+ 	}
+	public int getNumber()
+	{
+		return randomNumber;
+	}
+	public boolean equals(TrippleDice obj)
+	{
+		if(this.getNumber()==obj.getNumber())return true;
+		
+              else if return false;
+	}
+	public String toString()
+	{
+		return String.format("Random number of Tripple Dice is :%d",Throw());
+	}
+	public Object clone()throws CloneNotSupportedException{  
+		return super.clone();  
+}  
